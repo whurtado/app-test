@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-body">
+        <!-- FORM TO ADD TASKS -->
+        <form (submit)="addContact(nuevoNombre, nuevoTelefono, nuevoCorreo)">
+            <div class="form-group">
+                <input type="text" placeholder="ingrese un nombre" #nuevoNombre class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="ingrese un numero telefonico" #nuevoTelefono class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="ingrese un correo" #nuevoCorreo class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+        </form>
+    </div>
+</div>

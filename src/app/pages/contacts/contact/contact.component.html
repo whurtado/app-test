@@ -1,0 +1,19 @@
+<div class="card mb-2">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h3>{{ contact.nombre }}</h3>
+        <div>
+            <button (click)="contact.ocultarContenido = !contact.ocultarContenido" class="btn btn-primary">
+                Ver
+                </button>
+            <button (click)="deleteContact(contact)" class="btn btn-danger">
+                Eliminar
+            </button>
+        </div>
+    </div>
+    <div class="card-body" [hidden]="contact.ocultarContenido">
+        <p>{{contact.telefono}}</p>
+    </div>
+    <div class="card-body" [hidden]="contact.ocultarContenido">
+        <p>{{contact.correo}}</p>
+    </div>
+</div>

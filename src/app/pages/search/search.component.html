@@ -1,0 +1,9 @@
+<h1>Buscar personajes <small class="text-capitalize"> {{ texto }} </small></h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+
+        <app-character *ngIf="characters.length > 0" [characters]="characters"></app-character>
+    </div>
+</div>
